@@ -8,65 +8,84 @@
   <meta name="keywords" content="html, css">
   <meta name="description" content="описание">
   <title>Resume</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <img src="images/6a684dedf093678281261b3cd0a99383.jpg" alt="avatar" width="150">
+  <div class="container">
 
-  <h1>Антон Васильев</h1>
 
-  <p>Я студент</p>
-  <p>Я люблю заниматься скалалазоньем</p>
+    <img class="avatar" src="images/6a684dedf093678281261b3cd0a99383.jpg" alt="avatar" width="150">
 
-  <ul>
-    <li><a href="https://t.me/som_83" target="_blank">Telegram</a></li>
-  </ul>
-
-  <h2>Мои хобби</h2>
-
-  <ul>
-    <li>Лыжи</li>
-    <li>it</li>
-  </ul>
-
-  <h1>Опыт работы</h1>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Нызвание</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Школа</td>
-        <td>Студент</td>
-        <td>2011-2022</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h1>Связаться со мной</h1>
-
-  <form action="">
-    <div>
-      <label for="name">Ваше имя:</label>
-      <input placeholder="Ваше имя:" type="text" id="name">
+    <div class="card">
+      <h1 class="title">Антон Васильев</h1>
+      <p>Я студент</p>
+      <p>Я люблю заниматься скалалазоньем</p>
+      <ul class="social">
+        <li><a href="https://t.me/som_83" target="_blank">Telegram</a></li>
+        <li><a href="https://t.me/som_83" target="_blank">Telegram</a></li>
+        <li><a href="https://t.me/som_83" target="_blank">Telegram</a></li>
+      </ul>
     </div>
-    <div>
-      <label for="email">Ваш email:</label>
-      <input placeholder="Ваш email:" type="text" id="email">
-    </div>
-    <div>
-      <label for="message">Ваше сообщение</label>
-      <textarea placeholder="Ваше сообщение:" id="message" rows="5" cols="25"></textarea>
-    </div>
-    <button type="submit">Отправить</button>
 
-  </form>
+
+    <div class="card">
+      <h2 class="title">Мои хобби</h2>
+      <ul class="">
+        <li>Лыжи</li>
+        <li>it</li>
+      </ul>
+    </div>
+
+
+    <div class="card">
+      <h1 class="title">Опыт работы</h1>
+      <table class="card__table">
+        <thead>
+          <tr>
+            <th>Нызвание</th>
+            <th>Должность</th>
+            <th>Год</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Школа</td>
+            <td>Студент</td>
+            <td>2011-2022</td>
+          </tr>
+          <tr>
+            <td>Школа</td>
+            <td>Студент</td>
+            <td>2011-2022</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="card">
+      <h1 class="title">Связаться со мной</h1>
+      <form class="form" action="">
+        <div  class="form__box">
+          <label for="name">Ваше имя:</label>
+          <input placeholder="Ваше имя" type="text" id="name">
+        </div>
+        <div class="form__box">
+          <label for="email">Ваш email:</label>
+          <input placeholder="Ваш email" type="text" id="email">
+        </div>
+        <div class="form__box">
+          <label for="message">Ваше сообщение</label>
+          <textarea placeholder="Ваше сообщение" id="message" rows="5" cols="25"></textarea>
+        </div>
+        <button class="btn" type="submit">Отправить</button>
+
+      </form>
+    </div>
+  </div>
 
 </body>
 
